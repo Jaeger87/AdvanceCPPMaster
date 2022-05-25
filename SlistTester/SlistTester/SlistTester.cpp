@@ -2,9 +2,15 @@
 //
 
 #include <iostream>
+#include "SList.h"
+
 
 int main()
 {
+    SList listTest = SList();
+
+    listTest.Test();
+
     std::cout << "Hello World!\n";
 }
 
