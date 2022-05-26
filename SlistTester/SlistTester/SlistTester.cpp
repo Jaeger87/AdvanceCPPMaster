@@ -7,7 +7,7 @@
 
 int main()
 {
-    SList listTest = SList();
+    SList<int> listTest;
 
     listTest.Test();
 
