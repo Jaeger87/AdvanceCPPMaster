@@ -5,7 +5,7 @@ int main() {
 	SList<int> aa;
 
 
-	if (aa.count() == 0) {
+	if (aa.empty() == 0) {
 		return EXIT_SUCCESS;
 	}
 	else {

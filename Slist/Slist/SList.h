@@ -7,19 +7,18 @@
 
 // TODO: Fare riferimento qui alle intestazioni aggiuntive richieste dal programma.
 
-
 template<class T>
 class SList
 {
 
 public:
 
-	using size_type = std::size_t;
 
 	SList();
 	~SList();
+	SList<T>& operator=(SList&& other);
 	bool empty() const noexcept;
-	size_type size() const noexcept;
+	int size() const noexcept;
 	T getzero();
 	void Test();
 	int count();
