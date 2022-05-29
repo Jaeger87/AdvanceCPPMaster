@@ -9,6 +9,7 @@ using std::endl;
 template<class T>
 inline SList<T>::SList()
 {
+
 }
 
 template<class T>
@@ -32,24 +33,11 @@ inline bool SList<T>::empty() const noexcept
 template<class T>
 inline int SList<T>::size() const noexcept
 {
-	return 0;
-}
-
-
-template<class T>
-inline T SList<T>::getzero()
-{
-	return T();
+	return counterElements;
 }
 
 template<class T>
-inline void SList<T>::Test()
+inline SList<T>::Iterator SList<T>::begin() noexcept
 {
-	cout << "Test" << endl;
-}
-
-template<class T>
-inline int SList<T>::count()
-{
-	return 0;
+	return Iterator();
 }
