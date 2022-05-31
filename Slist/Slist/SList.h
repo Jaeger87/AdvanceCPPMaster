@@ -82,6 +82,7 @@ public:
 	bool empty() const noexcept;
 	int size() const noexcept;
     Iterator begin() noexcept;
+    void push_front(T&& value);
 	
 
 private:

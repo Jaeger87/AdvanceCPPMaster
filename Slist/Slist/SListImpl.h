@@ -41,3 +41,12 @@ inline SList<T>::Iterator SList<T>::begin() noexcept
 {
 	return Iterator();
 }
+
+template<class T>
+inline void SList<T>::push_front(T&& value)
+{
+	ListElement newElement = new ListElement(value);
+	newElement->next = firstElement;
+	firstElement = newElement;
+
+}

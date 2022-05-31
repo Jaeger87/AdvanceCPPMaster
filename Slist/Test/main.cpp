@@ -1,4 +1,14 @@
 #include "SList.h"
+/*
+void print(int id, const SList<int>& container)
+{
+	std::cout << id << ". ";
+	for (const int x : container.begin) {
+		std::cout << x << ' ';
+	}
+	std::cout << '\n';
+}
+*/
 
 int main() {
 	
